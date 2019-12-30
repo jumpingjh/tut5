@@ -1,0 +1,52 @@
+[
+	{
+		"title": "begin",
+		"tags": "",
+		"body": "...\nHello my friend. My name is: <<if $speakName == \"Left\">> Left [Z to continue] <<else>> Right [Z to continue] <<endif>> \n\nNow I change your animation\nthree...\n<< wait 300>>\ntwo...\n<< wait 300>> \none...\n<< wait 300>> \n<< animjj >> \n<< wait 500>>\n.\n.\nWhat do you want to do ? [Z to continue] \n\n[[ say hello |hello ]] [[ say adios |end ]] ",
+		"position": {
+			"x": -73,
+			"y": -5
+		},
+		"colorID": 0
+	},
+	{
+		"title": "hello",
+		"tags": "",
+		"body": "<< wait 1000 >> \nSee you later,\n<< wait 1000 >> ",
+		"position": {
+			"x": -152,
+			"y": 255
+		},
+		"colorID": 0
+	},
+	{
+		"title": "end",
+		"tags": "",
+		"body": "<< adios >> \nend \n",
+		"position": {
+			"x": 239,
+			"y": 320
+		},
+		"colorID": 0
+	},
+	{
+		"title": "leftNode",
+		"tags": "",
+		"body": "<<set $speakName to \"Left\" >> \n[[Answer:begin|begin]]",
+		"position": {
+			"x": -431,
+			"y": -20
+		},
+		"colorID": 0
+	},
+	{
+		"title": "rightNode",
+		"tags": "",
+		"body": "<<set $speakName to \"Right\" >> \n[[Answer:begin|begin]]",
+		"position": {
+			"x": -429,
+			"y": 226
+		},
+		"colorID": 0
+	}
+]
